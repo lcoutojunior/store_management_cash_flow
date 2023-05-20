@@ -1,15 +1,19 @@
-import express from 'express'
-import * as dotenv from 'dotenv' 
-dotenv.config()
+import express from "express";
+import controllers from "./controllers/transaction.js";
+import bodyParser from "body-parser";
+import * as dotenv from "dotenv";
+dotenv.config();
 
-const port = process.env.PORT || 3001
+const port = process.env.PORT;
 const app = express();
-const router = express.Router();
 
-app.get('/', function(req,res){
-    res.send('Hello World Service 1');
-    });
+app.get("/", function (req, res) {
+  res.send("cash_flow up");
+});
+
+app.use(bodyParser.json());
+app.use(controllers);
 
 app.listen(port, () => {
-    console.log(`WebService listening on port ${port}`)
-  })
+  console.log(`cash_flow listening on port ${port}`);
+});
