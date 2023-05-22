@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "f831697e-7f64-4680-b630-d89e215ca493",
+		"name": "cash_flow_report",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6242499"
+	},
+	"item": [
+		{
+			"name": "Up",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transactions Report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/transactions_report",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"transactions_report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transactions Report to CSV",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/transactions_report_csv",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"transactions_report_csv"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
